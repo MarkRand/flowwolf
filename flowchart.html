@@ -5,8 +5,8 @@
         <title>Raphaël · Graffle</title>
         <link rel="stylesheet" href="demo.css" type="text/css" media="screen">
         <link rel="stylesheet" href="demo-print.css" type="text/css" media="print">
-        <script src="raphael-min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="graffle.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/raphael-min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/flowchart.js" type="text/javascript" charset="utf-8"></script>
         <style type="text/css" media="screen">
             #holder {
                 -moz-border-radius: 10px;
@@ -20,7 +20,11 @@
     </head>
     <body>
         <p>Drag shapes around.</p>
-        <div id="holder"></div>
+        <div id="toolkit">
+            <input type="button" value="add shape" id="add"/>
+        </div>
+        <div id="holder">
+        </div>
         <p id="copy">Demo of <a href="http://raphaeljs.com/">Raphaël</a>—JavaScript Vector Library</p>
     </body>
 </html>
